@@ -2,10 +2,13 @@
 <html lang="en">
       <head>
             <meta charset="UTF-8">
-            <title>Hover Effect</title>
+            <title>GestionCons</title>
             <link rel="stylesheet" href="style.css">
       </head>
-      <body>
+      <body background="medicament.png" >
+                  <header>GestionCons</header>
+                  
+                 
             <div class="menu">
                   <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
                   <label class="menu-open-button" for="menu-open">
@@ -13,16 +16,52 @@
                         <span class="lines line-2"></span>
                         <span class="lines line-3"></span>
                   </label>
-                  <a href="#" class="menu-item box1"> ★ </a>
-                  <a href="#" class="menu-item box2"> ★ </a>
-                  <a href="#" class="menu-item box3"> ★ </a>
-                  <a href="#" class="menu-item box4"> ★ </a>
-                  <a href="#" class="menu-item box5"> ❤ </a>
-                  <a href="#" class="menu-item box6"> ❤ </a>
-                  <a href="#" class="menu-item box7"> ❤ </a>
-                  <a href="#" class="menu-item box8"> ❤ </a>
+                   
+                  <button id="modalbtn"  class="menu-item box1">medecin</button>
+                  <button id="modalbtn1"  class="menu-item box2">medicament</button>
+                  <button id="modalbtn2"  class="menu-item box3">consultation</button>
+                  <button id="modalbtn3"  class="menu-item box4">patient</button>
+                  <button id="modalbtn4"  class="menu-item box5">listes</button>
+                  <div id="simplemodal" class="modal">
+                        <div class="modal-content">
+                              <span class="closebtn">&times;</span>
+                              <form>
+                                    id du medecin : <input type="text" title="id medecin"/><br><br>
+                                    nom medecin : <input type="text" title="nom medecin"/><br>
+                              </form>
+                        </div>
+                  </div>
+                  <div id="simplemodal1" class="modal1">
+                        <div class="modal-content">
+                              <span class="closebtn1">&times;</span>
+                              <form>
+                                    id du medicament : <input type="text" title="id medicament"/><br><br>
+                                    nom medicament : <input type="text" title="nom medicament"/><br>
+                              </form>
+                        </div>
+                  </div>
+                  <div id="simplemodal2" class="modal2">
+                        <div class="modal-content">
+                              <span class="closebtn2">&times;</span>
+                              <form>
+                                    id de la consultation : <input type="text" title="id cons"/><br><br>
+                                    id du medecin : <input type="text" title="id medecin"/><br>
+                              </form>
+                        </div>
+                  </div>
+                  <div id="simplemodal3" class="modal3">
+                        <div class="modal-content">
+                              <span class="closebtn3">&times;</span>
+                              <form>
+                                    numero ss : <input type="text" title="numss"/><br><br>
+                                    nom du patient : <input type="text" title="nom patient"/><br>
+                              </form>
+                        </div>
+                  </div>
             </div>
-           <div class="click-text"><p>click me!</p></div> 
+            <footer class="style"></div>
+                 <script src="main.js"></script>
+           
             
       </body>
 </html>
