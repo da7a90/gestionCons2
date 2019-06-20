@@ -180,7 +180,7 @@ button > img{
 }
 
 
-.modal,.modal1,.modal2,.modal3{
+.modal,.modal1,.modal2,.modal3,.modal4{
 
 	display: none;
 	position: fixed;
@@ -208,14 +208,14 @@ button > img{
 	
 
 }
-.closebtn, .closebtn1 , .closebtn2 , .closebtn3{
+.closebtn,.closebtn1,.closebtn2,.closebtn3,.closebtn4{
 
 	color: #ccc;
 	float: right;
 	font-size: 30px;
 	
 }
-.closebtn, .closebtn1 , .closebtn2 , .closebtn3:hover,.closebtn, .closebtn1 , .closebtn2 , .closebtn3:focus{
+.closebtn,.closebtn1,.closebtn2,.closebtn3,.closebtn4:hover,.closebtn,.closebtn1,.closebtn2,.closebtn3,.closebtn4:focus{
 
 	color: rgb(0, 255, 179);
 	text-decoration: none;
@@ -268,6 +268,10 @@ button > img{
 		margin: 6px 2px;
 		cursor: pointer;
 		padding: 10px 32px;
+	}
+	input[type=submit]:hover{
+
+		background-color: rgb(1, 193, 252);
 	}
 
 @keyframes modalopen{

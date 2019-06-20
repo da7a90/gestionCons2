@@ -15,6 +15,10 @@ var modal3 = document.getElementById('simplemodal3');
 var modalbtn3 = document.getElementById('modalbtn3');
 var closebtn3 = document.getElementsByClassName('closebtn3')[0];
 
+var modal4 = document.getElementById('simplemodal4');
+var modalbtn4 = document.getElementById('modalbtn4');
+var closebtn4 = document.getElementsByClassName('closebtn4')[0];
+
 
 modalbtn.addEventListener('click', openmodal);
 
@@ -24,6 +28,8 @@ modalbtn2.addEventListener('click', openmodal2);
 
 modalbtn3.addEventListener('click', openmodal3);
 
+modalbtn4.addEventListener('click', openmodal4);
+
 
 closebtn.addEventListener('click', closemodal);
 
@@ -32,6 +38,9 @@ closebtn1.addEventListener('click', closemodal1);
 closebtn2.addEventListener('click', closemodal2);
 
 closebtn3.addEventListener('click', closemodal3);
+
+closebtn4.addEventListener('click', closemodal4);
+
 
 window.addEventListener('click', outsideclick);
 
@@ -56,6 +65,11 @@ function openmodal3(){
     modal3.style.display='block';
 }
 
+function openmodal4(){
+
+    modal4.style.display='block';
+}
+
 
 
 
@@ -77,6 +91,12 @@ function closemodal3(){
     modal3.style.display='none';
 }
 
+function closemodal4(){
+
+    modal4.style.display='none';
+}
+
+
 function outsideclick(e){
     switch (e.target){
 
@@ -87,6 +107,8 @@ function outsideclick(e){
         case modal2 : modal2.style.display='none';
 
         case modal3 : modal3.style.display='none';
+
+        case modal4 : modal4.style.display='none';
 
     }
 }
