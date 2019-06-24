@@ -287,13 +287,13 @@ background-color: aquamarine;
 
 		background-color: rgb(1, 193, 252);
 	}
-	@media screen and (min-width:480px) and (max-width:1080px) {
+	@media screen and (min-width:480px) and (max-width:1080px) and (orientation : portrait) {
 		/* for screens that are at least 20 pixels wide but less than or equal to 970 pixels wide */
 		body{
 			background-color: rgb(221, 255, 244);
 			background-repeat: no-repeat;
 			background-position: center;
-			background-position-y: -40%;
+			background-position-y: -75%;
 			
 			
 			}
@@ -301,12 +301,13 @@ background-color: aquamarine;
 			
 				background-color: rgb(40, 184, 189);
 				font-family: Arial, Helvetica, sans-serif;
-				font-size: 100px;
+				font-size: 150px;
 				color: antiquewhite;
 				text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 				margin-left: -8px;
 				margin-right: -8px;
-				margin-top: -8px;
+				margin-top: -10px;
+				height: 200px;
 			}
 			
 			.menu{
