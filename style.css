@@ -578,7 +578,296 @@ background-color: aquamarine;
 				}
 			
 	}
-	
+	@media screen and (min-width:480px) and (max-width:1080px) and (orientation : landscape) {
+		/* for screens that are at least 20 pixels wide but less than or equal to 970 pixels wide */
+		body{
+			background-color: rgb(221, 255, 244);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-position-y: -75%;
+			
+			
+			}
+			header{
+			
+				background-color: rgb(40, 184, 189);
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 150px;
+				color: antiquewhite;
+				text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+				margin-left: -8px;
+				margin-right: -8px;
+				margin-top: -10px;
+				height: 200px;
+			}
+			
+			.menu{
+				top: 1100px;
+				bottom: 0;
+				right: 70px;
+				left: 0;
+				margin: auto;
+				margin-right: 400px;
+				position: absolute;
+				text-align: center;
+				
+				float: left;
+				width: 250px;
+				height: 250px;
+			}
+			.menu-open{
+				display: none;
+				cursor: pointer;
+			}
+			.menu-item, .menu-open-button {
+				box-shadow: 4px 4px 2px 0 rgb(0, 67, 83);
+				border: 1px solid #00acc7;
+				background: rgb(0, 110, 134);
+				border-radius: 100%;
+				width: 250px;
+				height: 250px;
+				margin-left: -40px;
+				position: absolute;
+				color: rgb(179, 218, 255);
+				font-family: fantasy;
+				text-align: center;
+				float: left;
+				line-height: 80px;
+				transform: translate3d(0, 0, 0);
+				transition: transform cubic-bezier(3.4, -4.7, 4.1, 16.5) 500ms;
+				
+			}
+			.menu-item{
+				width: 250px;
+				height: 250px;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 90px;
+				margin: auto;
+				position: absolute;
+			}
+			.menu-open-button {
+				z-index: 1;
+			}
+			.lines {
+				width: 65px;
+				height: 25px;
+				background: #FFFFFF;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -25.5px;
+				margin-top: -1.5px;
+				transition: transform 200ms;
+			}
+			.line-1{
+				transform: translate3d(0, -80px, 0)
+			}
+			.line-2{
+				transform: translate3d(0, 0, 0)
+			}
+			.line-3{
+				transform: translate3d(0, 80px, 0)
+			}
+			
+			.menu-open:checked + .menu-open-button{
+				transform: scale(.6, .6);
+			}
+			.menu-open:checked + .menu-open-button .line-1{
+				background: #c5dfff;
+				color: rgb(35, 102, 146);
+				transform: translate3d(0, 0, 0) rotate(45deg);
+			}
+			.menu-open:checked + .menu-open-button .line-2{
+				background: #c5dfff;
+				color: rgb(35, 102, 146);
+				transform: translate3d(0, 0, 0) scale(.1, 1);
+			}
+			.menu-open:checked + .menu-open-button .line-3{
+				background: #c5dfff;
+				color: rgb(35, 102, 146);
+				transform: translate3d(0, 0, 0) rotate(-45deg);
+			}
+			.menu-open:checked + .menu-item {
+				transition-timing-function: cubic-bezier(9.35, 0, 3.4, 13.3);
+			}
+			.menu-open:checked ~ .menu-item:nth-child(3){
+				transform: translate3d(0, 180px, 0);
+				transition: 500ms;
+			}
+			.menu-open:checked ~ .menu-item:nth-child(4){
+				transform: translate3d(-40px, -180px, 0);
+				transition: 500ms;
+			}
+			.menu-open:checked ~ .menu-item:nth-child(5){
+				transform: translate3d(-250px, 0, 0);
+				transition: 500ms;
+			}
+			.menu-open:checked ~ .menu-item:nth-child(6){
+				transform: translate3d(110px, 0, 0);
+				transition: 500ms;
+			}
+			.menu-open:checked ~ .menu-item:nth-child(7){
+				transform: translate3d(180px, -180px, 0);
+				transition: 1s;
+			}
+			.menu-open:checked ~ .menu-item:nth-child(8){
+				transform: translate3d(-150px, 150px, 0);
+				transition: 1s;
+			}
+			.menu-open:checked ~ .menu-item:nth-child(9){
+				transform: translate3d(-150px, -150px, 0);
+				transition: 1s;
+			}
+			.menu-open:checked ~ .menu-item:nth-child(10){
+				transform: translate3d(150px, 150px, 0);
+				transition: 1s;
+			}
+			button {
+				overflow: hidden;
+				text-align: center;
+				float: left;
+				text-decoration: none;
+				font-size: 200%;
+			}
+			button:hover{ font-size: 150px; color: rgb(255, 255, 255); background-color: rgb(24, 73, 105);  }
+			button > img{
+				height: 80px;
+				width: 80px;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				position: absolute;
+				margin: auto;
+				margin-left: -10px;
+			}
+			.bouton:hover{
+			background-color: aquamarine;
+			
+			}
+			
+			
+			.style {
+				
+				font-size: 200%;
+				top : 1200px;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				margin: auto;
+				position: absolute;
+				text-align: center;
+				text-rendering: auto;
+				font-family: fantasy;
+				padding: 25px;
+				background-color: rgb(32, 144, 148);
+				display: inherit;
+				
+			}
+			
+			
+			.modal,.modal1,.modal2,.modal3,.modal4{
+			
+				display: none;
+				position: fixed;
+				z-index: 1;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, .5);
+				padding:0 ;
+				
+			
+			}
+			.modal-content{
+			
+				background-color: #ffffff;
+				margin: 20% auto;
+				padding: 0%;
+				width: 70%;
+				margin-top: 2%;
+				box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2),0 7px 20px 0 rgba(0, 0, 0, .17);
+				animation-name: modalopen;
+				animation-duration: .5s;
+				
+			
+			}
+			.closebtn,.closebtn1,.closebtn2,.closebtn3,.closebtn4{
+			
+				color: #ccc;
+				float: right;
+				font-size: 30px;
+				
+			}
+			.closebtn,.closebtn1,.closebtn2,.closebtn3,.closebtn4:hover,.closebtn,.closebtn1,.closebtn2,.closebtn3,.closebtn4:focus{
+			
+				color: rgb(0, 255, 179);
+				text-decoration: none;
+				cursor: pointer;
+				
+			}
+			
+			.medecin{
+				display: grid;
+				vertical-align: middle;
+				background-color: rgb(220, 241, 245);
+				padding: 15%;
+				font-weight: bolder;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				margin-top: 0%;
+			}
+			
+			.mod{
+				background: #00acc7;
+				padding: 2%;
+				color: #FFFFFF;
+				margin: auto;
+				
+				}
+				input{	
+					
+					font-family: fantasy;
+					padding: 25px 50px;
+					margin: 28px 0;
+					box-sizing: border-box;
+					
+				}
+				input[type=text]{
+					font-size: 200%;
+					border: none;
+					border-bottom: 1px solid rgb(0, 183, 255);
+					background-color: rgb(66, 255, 198);
+					color: #000f;
+					font-family: monospace;
+				}
+				
+				input[type=submit]{
+			
+					border: none;
+					border-bottom: 1px solid rgb(0, 183, 255);
+					background-color: rgb(0, 120, 156);
+					color: #fff;
+					font-family: monospace;
+					text-decoration: none;
+					margin: 16px 12px;
+					cursor: pointer;
+					padding: 20px 42px;
+					font-size: 200%;
+				}
+				input[type=submit]:hover{
+			
+					background-color: rgb(1, 193, 252);
+				}
+				label{
+					font-size: 200%;
+				}
+			
+	}
 
 
 @keyframes modalopen{
